@@ -1,0 +1,148 @@
+Templist Updates
+
+Update1:
+
+	Chartjs link Updated
+	 
+	Step1:go to dashboard Folder And open All html files. and go to script section replace Chart.bundle.js. Here Captalize issue Previous Link Replace with Updated Link
+
+	Previous:
+
+	<script src="../assets/plugins/chart/Chart.bundle.js"></script>
+
+
+	Updated:
+
+	<script src="../assets/plugins/chart/chart.bundle.js"></script>
+
+
+Update2:
+	About page Updated :
+
+	step 1:open about.html in Dashboard folder root-->(dashboard/about.html) and replace the app-content Section 
+
+	For Example See the image "1.jpg"
+
+Update3:
+	Step1:
+
+	Added Additional Css in Style.css
+
+	.keywords-input{
+		font-size:13px !important
+	}
+	.keywords-input:placeholder{
+		font-size:13px !important
+	}
+	.z-documentation-10{
+		position:relative;
+		z-index:10;
+	}
+
+Update4:
+
+	Update Complete Construction Page
+
+	Step1: open countdown.js Root-->(assets/plugins/jquery-countdown/countdown.js) Replace The Updated Js on Previous js
+
+
+Update5: 
+
+	Step1:Open Style.css root--->(assets/css/style.css) And go to line number 10913. adjust the Width And height values
+
+	Previous:
+
+	.carousel-indicators li, .carousel-indicators li.active {
+		width: 18px; //Update Width
+		height: 18px; //Update Height
+		border-radius: 50%;
+		margin: 1px 2px;
+	}
+
+	Updated:
+
+	.carousel-indicators li, .carousel-indicators li.active {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		margin: 1px 2px;
+	}
+
+
+Update6:
+
+	step1:open form-elements.css root-->(assets/css/form-elements.css) and go to line number 102 and remove one css line
+
+	Step2:
+
+	Previous:
+
+	.input-lg {
+		height: 46px!important;
+		padding: 10px 16px;
+		font-size: 18px;//Remove Font Size
+		line-height: 1.3333333;
+		border-radius: 4px;
+	}
+
+	Updated:
+
+	.input-lg {
+		height: 46px!important;
+		padding: 10px 16px;
+		line-height: 1.3333333;
+		border-radius: 4px;
+	}
+
+
+Update7:
+
+cart Add Plus Plugin Updated
+
+
+Step1: Open cart.html page root-->(Html/cart.html) and go to near line number 910 .And Replace Previous table with Updated table of Shopping Cart
+
+
+Step 2: open Custom.js root-->(assets/js/custom.js) and go to naer line number 81 .and Add Below Js after "// ______________Quantity-right-plus" js .example see 2.jpg
+
+
+
+	// ______________Quantity-right-plus1
+	var quantitiy = 0;
+	$(document).on('click','.quantity-right-plus1', function(e) {
+		e.preventDefault();
+		var quantity = parseInt($('#quantity1').val()); 
+		$('#quantity1').val(quantity + 1); 
+	});
+	$(document).on('click', '.quantity-left-minus1', function(e) {
+		e.preventDefault();
+		var quantity = parseInt($('#quantity').val());
+		if (quantity > 0) {
+			$('#quantity1').val(quantity - 1);
+		}
+	});
+	
+	// ______________Quantity-right-plus2
+	var quantitiy = 0;
+	$(document).on('click','.quantity-right-plus2', function(e) {
+		e.preventDefault();
+		var quantity = parseInt($('#quantity').val()); 
+		$('#quantity2').val(quantity + 1); 
+	});
+	$(document).on('click', '.quantity-left-minus2', function(e) {
+		e.preventDefault();
+		var quantity = parseInt($('#quantity').val());
+		if (quantity > 0) {
+			$('#quantity2').val(quantity - 1);
+		}
+	});
+
+
+
+
+
+
+
+
+
+
