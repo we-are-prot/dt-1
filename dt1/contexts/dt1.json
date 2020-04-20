@@ -1,0 +1,139 @@
+{
+	"page": {
+		"page_title": "Templist",
+		"header_title": "Templist – HTML5 Premium Digital goods marketplace directory jquery css responsive website Template",
+		"header_icon": "assets/images/brand/favicon.ico"
+	},
+
+	"navbar": {
+		"name": "Menu",
+		"contents": [
+			{
+				"name": "Home",
+				"link": "index.html"
+			},
+			{
+				"name": "Ipsum veroeros",
+				"link": "generic.html"
+			},
+			{
+				"name": "Tempus etiam",
+				"link": "generic.html"
+			},
+			{
+				"name": "Consequat dolor",
+				"link": "generic.html"
+			},
+			{
+				"name": "Elements",
+				"link": "elements.html"
+			}
+		]
+	},
+
+	"sections": [
+		{
+			"type": "header",
+			"title": "This is Phantom, a free, fully responsive site",
+			"text": "Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore."
+		},
+		{
+			"type": "tiles",
+			"items": [
+				{
+					"name": "Tile1",
+					"img": "phantom_template/images/pic01.jpg",
+					"class": "style1",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				},
+				{
+					"name": "Tile2",
+					"img": "phantom_template/images/pic02.jpg",
+					"class": "style2",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				},
+				{
+					"name": "Tile3",
+					"img": "phantom_template/images/pic03.jpg",
+					"class": "style3",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				},
+				{
+					"name": "Tile4",
+					"img": "phantom_template/images/pic02.jpg",
+					"class": "style4",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				},
+				{
+					"name": "Tile5",
+					"img": "phantom_template/images/pic02.jpg",
+					"class": "style5",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				},
+				{
+					"name": "Tile6",
+					"img": "phantom_template/images/pic02.jpg",
+					"class": "style6",
+					"link": "generic.html",
+					"content": "Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat."
+				}
+			]
+		},
+		{
+			"type": "text",
+			"title": "Text Section",
+			"img": "phantom_template/images/pic14.jpg",
+			"img_align": "left",
+			"content": "Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent."
+		},
+		{
+			"type": "page",
+			"title": "Generic Page",
+			"img": "phantom_template/images/pic13.jpg",
+			"content": [
+				"Donec eget ex magna. Interdum et malesuada, et malesuada fames.",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			]
+		}
+	],
+
+	"footer": {
+		"get_in_touch": {
+			"title": "Get in touch",
+			"name_input_placeholder": "Name",
+			"email_input_placeholder": "Email",
+			"message_input_placeholder": "Message",
+			"submit_btn_txt": "Send"
+		},
+
+		"icon_section": {
+			"title": "Follow",
+			"icons": [
+				{
+					"name": "Twitter",
+					"link": "#",
+					"icon": "fa-twitter"
+				},
+				{
+					"name": "Facebook",
+					"link": "#",
+					"icon": "fa-facebook-f"
+				},
+				{
+					"name": "Instagram",
+					"link": "#",
+					"icon": "fa-instagram"
+				}
+			]
+		},
+
+		"bottom_info": [
+			"© Untitled. All rights reserved"
+		]
+	}
+}
