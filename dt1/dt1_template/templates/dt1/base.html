@@ -6,26 +6,25 @@
 		<meta charset="UTF-8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta content="Templist – HTML5 Premium Digital goods marketplace directory jquery css responsive website Template" name="description">
-		<meta content="Spruko Technologies Private Limited" name="author">
-		<meta name="keywords" content="digital goods, digital marketplace, easy digital downloads, marketplace website, multi vendor, online marketplace, digital download, marketplace, best marketplace, best marketplace websites, building an online marketplace, digital goods marketplace, digital product marketplace, internet marketplace, marketplace html template, marketplace template, marketplace website template, online marketplace to sell, web marketplace, bootstrap 4 marketplace template, bootstrap marketplace, bootstrap marketplace template, digital marketplace html template, html marketplace template, marketplace bootstrap template, marketplace template bootstrap, marketplace template html, multi vendor html template, template marketplace bootstrap"/>
-
+		<meta content="{{ page.description }}" name="description">
+		<meta content="{{ page.author }}" name="author">
+		<meta name="keywords" content="{{ page.keywords }}"/>
 		<!-- Favicon -->
-		<link rel="icon" href="{% static {{ page.header_icon }} %}" type="image/x-icon"/>
-		<link rel="shortcut icon" type="image/x-icon" href="{% static {{ page.header_icon }} %}" />
+		<link rel="icon" href="{% static page.header_icon %}" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="{% static page.header_icon %}" />
 
 		<!-- Title -->
-		<title>Templist – HTML5 Premium Digital goods marketplace directory jquery css responsive website Template</title>
+		<title>{{ page.header_title }}</title>
 
 		<!-- Bootstrap css -->
 		<link href="{% static 'assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css' %}" rel="stylesheet" />
 
 		<!-- Style css -->
-		<link href="{% static 'assets/css/style-rtl.css" rel="stylesheet' %}" />
-		<link href="{% static 'assets/css/skin-modes-rtl.css" rel="stylesheet' %}" />
+		<link href="{% static 'assets/css/style-rtl.css' %}" rel="stylesheet" />
+		<link href="{% static 'assets/css/skin-modes-rtl.css' %}" rel="stylesheet" />
 
 		<!-- Font-awesome  css -->
-		<link href="{% static 'assets/css/icons.css" rel="stylesheet' %}"/>
+		<link href="{% static 'assets/css/icons.css' %}" rel="stylesheet"/>
 
 		<!--Horizontal Menu css-->
 		<link href="{% static 'assets/plugins/horizontal-menu/horizontal-menu-rtl.css' %}" rel="stylesheet" />
@@ -49,7 +48,7 @@
 		<link href="{% static 'assets/plugins/autocomplete/jquery.autocomplete.css' %}" rel="stylesheet">
 
 		<!-- Color Skin css -->
-		<link id="theme" rel="stylesheet" type="text/css" media="all" href="{% static 'assets/color-skins/color6.c{% static '" />
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="{% static 'assets/color-skins/color6.css' %}" />
 
 	</head>
 
@@ -62,84 +61,67 @@
 		<div class="footer-main">
 			<div class="container">
 				<div class="row">
+					{% if footer.about.show %}
 					<div class="col-lg-3 col-md-12">
-						<h6>About</h6>
+						<h6>{{ footer.about.title }}</h6>
 						<hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate essequasi, veritatis totam voluptas nostrum.Lorem ipsum dolor sit amet, consectetur </p>
+						<p>{{ footer.about.text }}</p>
 						<ul class="list-unstyled list-inline mt-3">
-							<li class="list-inline-item">
-							  <a class="btn ripple btn-floating btn-sm mx-1">
-								<i class="fa fa-facebook"></i>
-							  </a>
-							</li>
-							<li class="list-inline-item">
-							  <a class="btn ripple btn-floating btn-sm mx-1">
-								<i class="fa fa-twitter"></i>
-							  </a>
-							</li>
-							<li class="list-inline-item">
-							  <a class="btn ripple btn-floating btn-sm mx-1">
-								<i class="fa fa-google-plus"></i>
-							  </a>
-							</li>
-							<li class="list-inline-item">
-							  <a class="btn ripple btn-floating btn-sm mx-1">
-								<i class="fa fa-linkedin"></i>
-							  </a>
-							</li>
+							{% for icon in footer.about.icons %}
+								<li class="list-inline-item">
+								  <a class="btn ripple btn-floating btn-sm mx-1">
+									<i class="fa {{ icon.fa-icon }}"></i>
+								  </a>
+								</li>
+							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
+					{% if footer.our_services.show %}
 					<div class="col-lg-2 col-md-12">
-						<h6>Our Services</h6>
+						<h6>{{ footer.our_services.title }}</h6>
 						 <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
 						<ul class="list-unstyled mb-0">
-							<li><a href="javascript:;">Our Team</a></li>
-							<li><a href="javascript:;">Contact US</a></li>
-							<li><a href="javascript:;">About</a></li>
-							<li><a href="javascript:;">Services</a></li>
-							<li><a href="javascript:;">Blog</a></li>
-							<li><a href="javascript:;">Terms and Services</a></li>
+							{% for service in footer.our_services.service_links %}
+								<li><a href="{{ service.link }}">{{ service.link_name }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
-
+					{% endif %}
+					{% if footer.contact.show %}
 					<div class="col-lg-3 col-md-12">
-						<h6>Contact</h6>
+						<h6>{{ footer.contact.title }}</h6>
 						<hr class="deep-purple  text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
 						<ul class="footer-conatct list-unstyled mb-0 contact-footer">
-							<li>
-								<a href="#"><i class="fa fa-home ml-3 text-white"></i>  22 S. Rock Creek StreetSan Carlos, Uniontown CA 94070, USA</a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-envelope ml-3 text-white"></i> info12323@example.com</a></li>
-							<li>
-								<a href="#"><i class="fa fa-phone ml-3 text-white"></i> + 01 234 567 88</a>
-							</li>
-							 <li>
-								<a href="#"><i class="fa fa-print ml-3 text-white"></i> + 01 234 567 89</a>
-							</li>
+							{% for detail in footer.contact.details %}
+								<li>
+									<a href="{{ detail.link }}"><i class="fa {{ detail.fa-icon }} ml-3 text-white"></i>{{ detail.detail_text }}</a>
+								</li>
+							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
+					{% if footer.subscribe.show %}
 					<div class="col-lg-4 col-md-12">
-						<h6>Subscribe</h6>
+						<h6>{{ footer.subscribe.title }}</h6>
 						<hr class="deep-purple  text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
 						<div class="clearfix"></div>
 						<div class="input-group w-100">
 							<input type="text" class="form-control br-tr-3  br-br-3 " placeholder="Email">
 							<div class="input-group-append ">
-								<button type="button" class="btn ripple  btn-primary br-tl-3  br-bl-3"> Subscribe </button>
+								<button type="button" class="btn ripple  btn-primary br-tl-3  br-bl-3"> {{ footer.subscribe.sub_btn_text }} </button>
 							</div>
 						</div>
-						<h6 class="mb-0 mt-5">Payments</h6>
+						<h6 class="mb-0 mt-5">{{ footer.subscribe.pay_area_title }}</h6>
 						<hr class="deep-purple  text-primary accent-2 mb-2 mt-3 d-inline-block mx-auto">
 						<div class="clearfix"></div>
 						<ul class="footer-payments">
-							<li class="pr-0"><a href="javascript:;"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
+							{% for pay_method in footer.subscribe.pay_methods %}
+								<li><a href="{{ pay_method.link }}"><i class="fa {{ pay_method.fa-icon }}" aria-hidden="true"></i></a></li>
+							{% endfor %}
 						</ul>
 					</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
@@ -147,7 +129,7 @@
 			<div class="container">
 				<div class="row d-flex">
 					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
-						Copyright © 2020 <a href="#" class="fs-14 text-primary">Templist</a>. Designed  by <a href="#" class="fs-14 text-primary"> Spruko Technologies Pvt.Ltd </a>All rights reserved.
+						{{ footer.bottom_info }}
 					</div>
 				</div>
 			</div>
