@@ -1,0 +1,104 @@
+{% load static %}
+<section class="sptb">
+    <div class="container">
+        <div class="section-title center-block text-center">
+            <h2>{{ section.content.title }}</h2>
+            <p>{{ section.content.tagline }}</p>
+        </div>
+        <div class="panel panel-primary">
+            <div class="">
+                <div class="tabs-menu ">
+                    <!-- Tabs -->
+                    <ul class="nav panel-tabs eductaional-tabs mb-6">
+                        {% for filter in section.content.filters %}
+                            <li><a class="{% if filter.class %}{{ filter.class }}{% endif %}" data-toggle="tab" href="{{ filter.filter_link }}">{{ filter.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="tab-content p-0 pt-3">
+                    {% for tab_pane in section.content.tab_panes %}
+                        <div class="{{ tab_pane.class }}" id="{{ tab_pane.id }}">
+                            <div class="row">
+                                {% for card in tab_pane.cards %}
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden">
+                                            {% if card.ribbon %}
+                                                <div class="{{ card.ribbon.class }}"><span class="{{ card.ribbon.span_class }}">{{ card.ribbon.text }}</span></div>
+                                            {% endif %}
+
+                                            <div class="item-card2-tans">
+                                                <div class="item-card7-imgs">
+                                                    <a href="{{ card.link }}"></a>
+                                                    <img alt="img" class="cover-image" src="{% static card.cover_image %}" />
+                                                    <div class="tag-text">
+                                                        <span class="bg-dark-transparent tag-option">{{ card.tag }}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-card2-icons">
+                                                    {% for hover_icon in card.hover_icons %}
+                                                        <a class="{{ hover_icon.class }}" data-placement="top" data-toggle="tooltip" href="{{ hover_icon.link }}" title="{{ hover_icon.title }}"><i class="{{ hover_icon.icon }}" style="top:20%;position:relative;"></i></a>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a class="text-dark" href="{{ card.link }}"><h4 class="font-weight-semibold">{{ card.name }}</h4></a>
+                                                        <p class="fs-13 mb-1 text-muted">{{ card.description }}</p>
+                                                    </div>
+                                                    <div class="d-md-flex">
+                                                        <div class="rating-stars d-flex mr-5">
+                                                            <input class="rating-value star" name="rating-stars-value" readonly="readonly" type="number" value="{{ card.star_amount }}" />
+                                                            <div class="rating-stars-container mr-2">
+                                                                <div class="rating-star sm">
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <div class="rating-star sm">
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <div class="rating-star sm">
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <div class="rating-star sm">
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                                <div class="rating-star sm">
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>({{ card.star_amount }})
+                                                        </div>
+                                                        <div class="ml-auto">
+                                                            <div class="item-card9-cost">
+                                                                <h4 class=" mb-0">{{ card.price }}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer pt-3">
+                                                <div class="footerimg d-flex mt-0 mb-0">
+                                                    <div class="d-flex footerimg-l mb-0">
+                                                        <img alt="image" class="avatar avatar-sm brround mr-2" src="{% static card.author.img %}" />
+                                                        <a class="time-title text-muted p-0 leading-normal" href="#">{{ card.author.name }}<i class="si si-check text-success fs-12 ml-1" data-placement="top" data-toggle="tooltip" title="verified"></i></a>
+                                                    </div>
+                                                    <div class="footerimg-r ml-auto">
+                                                        <span class="text-muted"><i class="{{ card.author.author_item_icon }}"></i> {{ card.author.author_item_amount }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="text-center mt-3">
+                                <a class="btn ripple btn-primary btn-lg" href="{{ section.content.text_link }}">{{ section.content.bottom_text }}</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

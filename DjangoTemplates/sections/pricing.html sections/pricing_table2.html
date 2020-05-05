@@ -1,0 +1,35 @@
+<div class="sptb bg-white">
+    <div class="container">
+        <div class="section-title center-block text-center">
+            <h2>{{ section.content.title }}</h2>
+            <p>{{ section.content.tagline }}</p>
+        </div>
+        <div class="row">
+            {% for option in section.content.columns %}
+                <div class="col-sm-6 col-xl-3 col-md-6">
+                    <div class="pricing-table {% if option.active %}active{% endif %} mb-lg-0">
+                        <div class="price-header">
+                            <h3 class="title">{{ option.title }}</h3>
+                            <div class="price">
+                                <span class="dollar">{{ option.currency }}</span>{{ option.price }}
+                            </div>
+                            <span class="permonth">{{ option.name }}</span>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                {% for feature in option.features %}
+                                    <li><b>{{ feature.bold_value }}</b> {{ feature.text }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% if option.select_btn %}
+                            <div class="price-footer">
+                                <a class="{{ option.select_btn.class }}" href="">{{ option.select_btn.text }}</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
