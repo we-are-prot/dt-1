@@ -1,7 +1,7 @@
 {
-    "static_paths": [ "static"],
-    "template_paths": ["templates"],
-    "context_paths": ["."],
+    "static_paths": [ "DjangoTemplates/static"],
+    "template_paths": ["DjangoTemplates/templates"],
+    "context_paths": ["DjangoTemplates"],
     "pages": [
         {
             "name": "Home page",
