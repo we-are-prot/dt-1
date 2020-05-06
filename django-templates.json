@@ -1,7 +1,7 @@
 {
     "static_paths": [ "static"],
     "template_paths": ["templates"],
-    "context_paths": [""],
+    "context_paths": ["."],
     "pages": [
         {
             "name": "Home page",
