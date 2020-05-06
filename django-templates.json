@@ -6,7 +6,7 @@
         {
             "name": "Home page",
             "contexts": ["context.json"],
-            "template": "index.html"
+            "template": "dt1_template/index.html"
         }
     ]
 
