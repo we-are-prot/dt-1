@@ -1,0 +1,193 @@
+{
+    "sections": [
+        {
+            "file": "dt1_template/masthead1.html",
+            "content": {
+                "background_img": "dt1_template/assets/images/banners/banner1.jpg",
+                "title": "Create your Business With MarketPlace",
+                "tagline": "It is a long established fact that a reader will be distracted by the readable.",
+                "searchbar_placeholder": "Search Product...",
+                "bottom_line": "45,789 HTML Templates from $1"
+            }
+        },
+        {
+            "file": "dt1_template/owl_carousel1.html",
+            "content": {
+                "title": "Latest Templates",
+                "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "carousel": [
+                    {
+                        "ribbon_icon": "fa fa-bolt",
+                        "link": "page-details.html",
+                        "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                        "tag_text": "HTML",
+                        "hover_icons": [
+                            {
+                                "class": "bg-primary",
+                                "link": "#",
+                                "title": "Add to Wishlist",
+                                "icon": "fe fe-heart"
+                            },
+                            {
+                                "class": "bg-secondary",
+                                "link": "#",
+                                "title": "Buy Now",
+                                "icon": "fe fe-shopping-cart"
+                            },
+                            {
+                                "class": "bg-info",
+                                "link": "#",
+                                "title": "View Details",
+                                "icon": "fe fe-eye"
+                            }
+                        ],
+                        "title": "HTML Template",
+                        "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                        "star_amount": "4",
+                        "price": "$15",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/female/18.jpg",
+                            "link": "#",
+                            "author_name": "Emily Parsons",
+                            "author_item_icon": "fe fe-shopping-cart",
+                            "author_item_amount": "36"
+                        }
+                    },
+                    {
+                        "ribbon_icon": "fa fa-bolt",
+                        "link": "page-details.html",
+                        "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                        "tag_text": "HTML",
+                        "hover_icons": [
+                            {
+                                "class": "bg-primary",
+                                "link": "#",
+                                "title": "Add to Wishlist",
+                                "icon": "fe fe-heart"
+                            },
+                            {
+                                "class": "bg-secondary",
+                                "link": "#",
+                                "title": "Buy Now",
+                                "icon": "fe fe-shopping-cart"
+                            },
+                            {
+                                "class": "bg-info",
+                                "link": "#",
+                                "title": "View Details",
+                                "icon": "fe fe-eye"
+                            }
+                        ],
+                        "title": "HTML Template",
+                        "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                        "star_amount": "4",
+                        "price": "$15",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/female/18.jpg",
+                            "link": "#",
+                            "author_name": "Emily Parsons",
+                            "author_item_icon": "fe fe-shopping-cart",
+                            "author_item_amount": "36"
+                        }
+                    },
+                    {
+                        "ribbon_icon": "fa fa-bolt",
+                        "link": "page-details.html",
+                        "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                        "tag_text": "HTML",
+                        "hover_icons": [
+                            {
+                                "class": "bg-primary",
+                                "link": "#",
+                                "title": "Add to Wishlist",
+                                "icon": "fe fe-heart"
+                            },
+                            {
+                                "class": "bg-secondary",
+                                "link": "#",
+                                "title": "Buy Now",
+                                "icon": "fe fe-shopping-cart"
+                            },
+                            {
+                                "class": "bg-info",
+                                "link": "#",
+                                "title": "View Details",
+                                "icon": "fe fe-eye"
+                            }
+                        ],
+                        "title": "HTML Template",
+                        "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                        "star_amount": "4",
+                        "price": "$15",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/female/18.jpg",
+                            "link": "#",
+                            "author_name": "Emily Parsons",
+                            "author_item_icon": "fe fe-shopping-cart",
+                            "author_item_amount": "36"
+                        }
+                    },
+                    {
+                        "ribbon_icon": "fa fa-bolt",
+                        "link": "page-details.html",
+                        "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                        "tag_text": "HTML",
+                        "hover_icons": [
+                            {
+                                "class": "bg-primary",
+                                "link": "#",
+                                "title": "Add to Wishlist",
+                                "icon": "fe fe-heart"
+                            },
+                            {
+                                "class": "bg-secondary",
+                                "link": "#",
+                                "title": "Buy Now",
+                                "icon": "fe fe-shopping-cart"
+                            },
+                            {
+                                "class": "bg-info",
+                                "link": "#",
+                                "title": "View Details",
+                                "icon": "fe fe-eye"
+                            }
+                        ],
+                        "title": "HTML Template",
+                        "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                        "star_amount": "4",
+                        "price": "$15",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/female/18.jpg",
+                            "link": "#",
+                            "author_name": "Emily Parsons",
+                            "author_item_icon": "fe fe-shopping-cart",
+                            "author_item_amount": "36"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "file": "dt1_template/row_deck1.html",
+            "content": {
+                "tiles": [
+                    {
+                        "icon": "fe fe-airplay",
+                        "title": "Quality Products",
+                        "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam"
+                    },
+                    {
+                        "icon": "fe fe-thumbs-up",
+                        "title": "Best Security",
+                        "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam"
+                    },
+                    {
+                        "icon": "fe fe-headphones",
+                        "title": "24/7 Customer Support",
+                        "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam"
+                    }
+                ]
+            }
+        }
+        
+    ]}
