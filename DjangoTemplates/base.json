@@ -1,0 +1,603 @@
+{
+  
+
+    "top_bar": {
+        "socials": [
+            {
+                "link": "#",
+                "icon": "fa-facebook"
+            },
+            {
+                "link": "#",
+                "icon": "fa-twitter"
+            },
+            {
+                "link": "#",
+                "icon": "fa-linkedin"
+            },
+            {
+                "link": "#",
+                "icon": "fa-google-plus"
+            }
+        ],
+        "contact": {
+            "communication": {
+                "contents": [
+                    {
+                        "link": "#",
+                        "icon": "fa fa-phone",
+                        "text": "+425 345 8765"
+                    }
+                ]
+            },
+            "countries": {
+                "contents": [
+                    {
+                        "name": "United States of America",
+                        "code": "UM"
+                    },
+                    {
+                        "name": "Japan",
+                        "code": "JP"
+                    },
+                    {
+                        "name": "Barbados",
+                        "code": "BB"
+                    }
+                ]
+            },
+            "languages": {
+                "contents": [
+                    {
+                        "name": "English",
+                        "href": "#"
+                    },
+                    {
+                        "name": "Arabic",
+                        "href": "#"
+                    },
+                    {
+                        "name": "German",
+                        "href": "#"
+                    },
+                    {
+                        "name": "Greek",
+                        "href": "#"
+                    }
+                ]
+            },
+            "currencies": {
+                "contents": [
+                    {
+                        "name": "USD",
+                        "href": "#"
+                    },
+                    {
+                        "name": "EUR",
+                        "href": "#"
+                    },
+                    {
+                        "name": "INR",
+                        "href": "#"
+                    },
+                    {
+                        "name": "GBP",
+                        "href": "#"
+                    }
+                ]
+            }
+        },
+        "custom": [
+            {
+                "type": "button",
+                "text": "Register",
+                "link": "register.html",
+                "icon": "fa-user"
+            },
+            {
+                "type": "button",
+                "text": "Login",
+                "link": "login.html",
+                "icon": "fa-sign-in"
+            },
+            {
+                "type": "dropdown",
+                "text": "My Dashboard",
+                "icon": "fa-home",
+                "contents": [
+                    {
+                        "text": "My Profile",
+                        "link": "mydash.html",
+                        "icon": "icon-user"
+                    },
+                    {
+                        "text": "Inbox",
+                        "link": "#",
+                        "icon": "icon-speech"
+                    },
+                    {
+                        "text": "Notifications",
+                        "link": "#",
+                        "icon": "icon-bell"
+                    },
+                    {
+                        "text": "Account Settings",
+                        "link": "#",
+                        "icon": "icon-settings"
+                    },
+                    {
+                        "text": "Log out",
+                        "link": "#",
+                        "icon": "icon-power"
+                    }
+                ]
+            }
+        ]
+    },
+
+    "header": {
+        "header_logo1": "dt1_template/assets/images/brand/logo1.png",
+        "header_logo2": "dt1_template/assets/images/brand/logo.png",
+        "items": [
+            {
+                "type": "cart",
+                "style": "notifications",
+                "icon": "fe fe-shopping-cart",
+                "span_class": "nav-unread badge badge-danger badge-pill",
+                "span_text": "2",
+                "dropdown_contents": [
+                    {
+                        "border": "border-bottom",
+                        "img_url": "dt1_template/assets/images/media/pictures/small/01.jpg",
+                        "text1": "HTML Template",
+                        "text2": "HTML",
+                        "price": "$24"
+                    },
+                    {
+                        "border": "border-bottom",
+                        "img_url": "dt1_template/assets/images/media/pictures/small/02.jpg",
+                        "text1": "Wordpress template",
+                        "text2": "Wordpress",
+                        "price": "$18"
+                    }
+                ],
+                "footer_contents": [
+                    {
+                        "btn_text": "View Cart",
+                        "btn_link": "cart.html",
+                        "btn_style": "btn-primary"
+                    },
+                    {
+                        "btn_text": "Checkout",
+                        "btn_link": "checkout.html",
+                        "btn_style": "btn-secondary"
+                    }
+                ]
+            },
+            {
+                "type": "notifications",
+                "style": "notifications",
+                "icon": "fe fe-bell",
+                "span_class": "pulse bg-success",
+                "span_text": "",
+                "dropdown_contents": [
+                    {
+                        "link": "#",
+                        "border": "",
+                        "icon": "fe fe-mail text-primary",
+                        "text1": "Commented on your post.",
+                        "text2": "3 hours ago"
+                    },
+                    {
+                        "link": "#",
+                        "border": "border-top",
+                        "icon": "fe fe-user text-secondary",
+                        "text1": "New User Registered.",
+                        "text2": "1 day ago"
+                    },
+                    {
+                        "link": "#",
+                        "border": "border-top",
+                        "icon": "fe fe-upload text-purple",
+                        "text1": "New file uploaded",
+                        "text2": "2 days ago"
+                    }
+                ],
+                "footer_contents": [
+                    {
+                        "link": "#",
+                        "text": "View All Notifications"
+                    }
+                ]
+
+            },
+            {
+                "type": "message",
+                "style": "message",
+                "icon": "fe fe-mail",
+                "span_class": "nav-unread badge badge-info badge-pill",
+                "span_text": "3",
+                "dropdown_contents": [
+                    {
+                        "link": "#",
+                        "border": "border-bottom",
+                        "avatar_img": "dt1_template/assets/images/users/male/1.jpg",
+                        "name": "Jack Wright",
+                        "text1": "All the best your template is awesome",
+                        "text2": "3 hours ago"
+                    }
+                ]
+            },
+            {
+                "type": "profile",
+                "style": "profile-1",
+                "icon": "fe fe-user",
+                "span_class": "pulse bg-success",
+                "span_text": "",
+                "dropdown_heading": true,
+                "dropdown_heading_data": {
+                    "text1": "Jacob Smith",
+                    "text2": "$478.99"
+                },
+                "dropdown_contents": [
+                    {
+                        "icon": "dropdown-icon ti-write",
+                        "text": "Edit Profile",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "dropdown-icon ti-heart",
+                        "text": "My Favorite",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "dropdown-icon ti-write",
+                        "text": "Edit Profile",
+                        "link": "#"
+                    }
+                ],
+                "footer_contents": [
+                    {
+                        "link": "#",
+                        "text": "Logout",
+                        "icon": "dropdown-icon ti-unlock"
+                    }
+                ]
+            }
+        ]
+    },
+
+    "horizontal_navbar": {
+        "nav_items": [
+            {
+                "type": "dropdown",
+                "dropdown_type": "simple",
+                "dropdown_name": "Home",
+                "dropdown_name_link": "#",
+                "items": [
+                    {
+                        "link": "#",
+                        "text": "Home Page 01"
+                    },
+                    {
+                        "link": "#",
+                        "text": "Home Page 02"
+                    },
+                    {
+                        "link": "#",
+                        "text": "Home Page 03"
+                    },
+                    {
+                        "link": "#",
+                        "text": "Home Page 04"
+                    }
+                ]
+            },
+            {
+                "type": "link",
+                "link": "about.html",
+                "name": "About Us"
+            },
+            {
+                "type": "link",
+                "link": "widgets.html",
+                "name": "Widgets"
+            },
+            {
+                "type": "dropdown",
+                "dropdown_type": "grid",
+                "dropdown_name": "Pages",
+                "dropdown_name_link": "#",
+                "grid_columns": [
+                    {
+                        "title": "Other Pages",
+                        "grid_items": [
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Other Pages",
+                        "grid_items": [
+                            {
+                                "link": "pricing.html",
+                                "text": "Pricing"
+                            },
+                            {
+                                "link": "typography.html",
+                                "text": "Typography"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "User Pages",
+                        "grid_items": [
+                            {
+                                "link": "userprofile.html",
+                                "text": "User Profile"
+                            },
+                            {
+                                "link": "myfavourite.html",
+                                "text": "Favourite"
+                            },
+                            {
+                                "link": "payments.html",
+                                "text": "Payments"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            },
+                            {
+                                "link": "page-list.html",
+                                "text": "Page List"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "dropdown",
+                "dropdown_type": "submenu",
+                "dropdown_name": "Blog",
+                "dropdown_name_link": "#",
+                "submenus": [
+                    {
+                        "name": "Blog Grid",
+                        "link": "#",
+                        "items": [
+                            {
+                                "name": "Blog Grid Left",
+                                "link": "blog-grid.html"
+                            },
+                            {
+                                "name": "Blog Grid Right",
+                                "link": "blog-grid-right.html"
+                            },
+                            {
+                                "name": "Blog Grid Center",
+                                "link": "blog-grid-center.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blog List",
+                        "link": "#",
+                        "items": [
+                            {
+                                "name": "Blog List Left",
+                                "link": "blog-list.html"
+                            },
+                            {
+                                "name": "Blog List Right",
+                                "link": "blog-list-right.html"
+                            },
+                            {
+                                "name": "Blog List Center",
+                                "link": "blog-list-center.html"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blog Details",
+                        "link": "#",
+                        "items": [
+                            {
+                                "name": "Blog Details Left",
+                                "link": "blog-details.html"
+                            },
+                            {
+                                "name": "Blog Details Right",
+                                "link": "blog-details-right.html"
+                            },
+                            {
+                                "name": "Blog Details Center",
+                                "link": "blog-details-center.html"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "dropdown",
+                "dropdown_type": "simple",
+                "dropdown_name": "Custom Pages",
+                "dropdown_name_link": "#",
+                "items": [
+                    {
+                        "link": "forum.html",
+                        "text": "Forum"
+                    },
+                    {
+                        "link": "register.html",
+                        "text": "Register"
+                    },
+                    {
+                        "link": "login.html",
+                        "text": "Login"
+                    },
+                    {
+                        "link": "forgot.html",
+                        "text": "Forgot Password"
+                    }
+                ]
+            },
+            {
+                "type": "link",
+                "link": "contact.html",
+                "name": "Contact Us"
+            }
+        ],
+        "nav_buttons": [
+            {
+                "text": "Become a Seller",
+                "icon": "fa fa-cart-plus",
+                "btn_class": "btn ripple btn-danger ad-post",
+                "link": "register.html"
+            }
+        ]
+    },
+
+   
+
+    "footer": {
+        "about": {
+            "title": "About",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate essequasi, veritatis totam voluptas nostrum.Lorem ipsum dolor sit amet, consectetur",
+            "icons": [
+                { "fa_icon": "fa-facebook" },
+                { "fa_icon": "fa-twitter" },
+                { "fa_icon": "fa-google-plus" },
+                { "fa_icon": "fa-linkedin" }
+            ]
+        },
+
+        "our_services": {
+            "title": "Our Services",
+            "service_links": [
+                {
+                    "link_name": "Our Team",
+                    "link": "javascript:;"
+                },
+                {
+                    "link_name": "Contact",
+                    "link": "javascript:;"
+                },
+                {
+                    "link_name": "About",
+                    "link": "javascript:;"
+                },
+                {
+                    "link_name": "Services",
+                    "link": "javascript:;"
+                },
+                {
+                    "link_name": "Blog",
+                    "link": "javascript:;"
+                },
+                {
+                    "link_name": "Terms and Services",
+                    "link": "javascript:;"
+                }
+            ]
+        },
+
+        "contact": {
+            "title": "Contact",
+            "details": [
+                {
+                    "fa_icon": "fa-home",
+                    "detail_text": "22 S. Rock Creek StreetSan Carlos, Uniontown CA 94070, USA",
+                    "link": "#"
+                },
+                {
+                    "fa_icon": "fa-envelope",
+                    "detail_text": "info12323@example.com",
+                    "link": "#"
+                },
+                {
+                    "fa_icon": "fa-phone",
+                    "detail_text": " + 01 234 567 88",
+                    "link": "#"
+                },
+                {
+                    "fa_icon": "fa-print",
+                    "detail_text": " + 01 234 567 89",
+                    "link": "#"
+                }
+            ]
+        },
+
+        "subscribe": {
+            "title": "Subscribe",
+            "sub_btn_text": "Subscribe",
+            "pay_area_title": "Payments",
+            "pay_methods": [
+                {
+                    "link": "javascript:;",
+                    "fa_icon": "fa-cc-visa"
+                },
+                {
+                    "link": "javascript:;",
+                    "fa_icon": "fa-credit-card-alt"
+                },
+                {
+                    "link": "javascript:;",
+                    "fa_icon": "fa-cc-mastercard"
+                },
+                {
+                    "link": "javascript:;",
+                    "fa_icon": "fa-cc-paypal"
+                },
+                {
+                    "link": "javascript:;",
+                    "fa_icon": "fa-cc-amex"
+                }
+            ]
+        },
+
+        "bottom_info": "Copyright © 2020 Templist. Designed by Spruko Technologies Pvt.Ltd All rights reserved."
+    }
+}
