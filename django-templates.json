@@ -1,0 +1,13 @@
+{
+    "static_paths": [ "static"],
+    "template_paths": ["templates"],
+    "context_paths": [""],
+    "pages": [
+        {
+            "name": "Home page",
+            "contexts": ["context.json"],
+            "template": "index.html"
+        }
+    ]
+
+}
