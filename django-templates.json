@@ -7,6 +7,16 @@
             "name": "Home page",
             "contexts": ["context.json"],
             "template": "dt1_template/index.html"
+        },
+        {
+            "name": "page 1",
+            "contexts": ["base.json", "page1.json"],
+            "template": "dt1_template/index.html"
+        },
+        {
+            "name": "page 2",
+            "contexts": ["base.json", "page2.json"],
+            "template": "dt1_template/index.html"
         }
     ]
 
