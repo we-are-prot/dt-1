@@ -1,0 +1,812 @@
+{
+"sections": [{
+            "file": "dt1_template/list_panel1.html",
+            "content": {
+                "title": "Featured Templates",
+                "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "filters": [
+                    {
+                        "name": "All",
+                        "class": "active show",
+                        "filter_link": "#tab-1"
+                    },
+                    {
+                        "name": "HTML",
+                        "filter_link": "#tab-2"
+                    },
+                    {
+                        "name": "Wordpress",
+                        "filter_link": "#tab-3"
+                    },
+                    {
+                        "name": "PHP",
+                        "filter_link": "#tab-4"
+                    }
+                ],
+                "tab_panes": [
+                    {
+                        "class": "tab-pane active show",
+                        "id": "tab-1",
+                        "cards": [
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "PHP",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "PHP Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$32",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "Wordpress",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "Wordpress Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$1",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "class": "tab-pane",
+                        "id": "tab-2",
+                        "cards": [
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            },
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "HTML",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "HTML Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$15",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "class": "tab-pane",
+                        "id": "tab-3",
+                        "cards": [
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "Wordpress",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "Wordpress Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$1",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "class": "tab-pane",
+                        "id": "tab-4",
+                        "cards": [
+                            {
+                                "ribbon": {
+                                    "class": "ribbon ribbon-top-left text-danger",
+                                    "span_class": "bg-danger",
+                                    "text": "Featured"
+                                },
+                                "tag": "PHP",
+                                "link": "page-details.html",
+                                "cover_image": "dt1_template/assets/images/media/pictures/1.jpg",
+                                "hover_icons": [
+                                    {
+                                        "class": "bg-primary",
+                                        "link": "#",
+                                        "title": "Add to Wishlist",
+                                        "icon": "fe fe-heart"
+                                    },
+                                    {
+                                        "class": "bg-secondary",
+                                        "link": "#",
+                                        "title": "Buy Now",
+                                        "icon": "fe fe-shopping-cart"
+                                    },
+                                    {
+                                        "class": "bg-info",
+                                        "link": "#",
+                                        "title": "View Details",
+                                        "icon": "fe fe-eye"
+                                    }
+                                ],
+                                "name": "PHP Templates",
+                                "description": "Lorem Ipsum available, quis int lorem ipsum nostrum exercitationem",
+                                "star_amount": "4",
+                                "price": "$32",
+                                "author": {
+                                    "name": "Gavin Fraser",
+                                    "img": "dt1_template/assets/images/users/male/1.jpg",
+                                    "author_item_icon": "fe fe-shopping-cart",
+                                    "author_item_amount": "36"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "bottom_text": "View All Products",
+                "text_link": "ad-list.html"
+            }
+        },
+        {
+            "file": "dt1_template/row_deck2.html",
+            "content": {
+                "class": "about-1 cover-image sptb section-bg-background-color1",
+                "tiles": [
+                    {
+                        "icon": "fe fe-codepen",
+                        "title": "Total Items",
+                        "number": "2569"
+                    },
+                    {
+                        "icon": "fe fe-shopping-cart",
+                        "title": "Total Sales",
+                        "number": "1742"
+                    },
+                    {
+                        "icon": "fe fe-users",
+                        "title": "Total Members",
+                        "number": "4123"
+                    },
+                    {
+                        "icon": "icon icon-emotsmile",
+                        "title": "Happy Customers",
+                        "number": "2332"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "dt1_template/widget1.html",
+            "content": {
+                "widgets": [
+                    {
+                        "bg_img": "dt1_template/assets/images/svg/1.svg",
+                        "title": "Sell Products",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiishic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                        "button": {
+                            "class": "btn ripple btn-primary",
+                            "link": "#",
+                            "text": "Become Author"
+                        }
+                    },
+                    {
+                        "bg_img": "dt1_template/assets/images/svg/2.svg",
+                        "title": "Buy Products",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiishic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                        "button": {
+                            "class": "btn ripple btn-secondary",
+                            "link": "#",
+                            "text": "Create an Account"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "file": "dt1_template/testimonials1.html",
+            "content": {
+                "title": "Best Testimonials",
+                "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "testimonials": [
+                    {
+                        "pagination": [
+                            {
+                                "class": "owl-page active",
+                                "avatar": ""
+                            },
+                            {
+                                "class": "owl-page",
+                                "avatar": ""
+                            },
+                            {
+                                "class": "owl-page",
+                                "avatar": ""
+                            }
+                        
+                        ],
+                        "name": "Elizabeth",
+                        "job": "Web Developer",
+                        "star_amount": "4",
+                        "quote": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+                        "bottom_btn": {
+                            "text": "View All Testimonials",
+                            "class": "btn ripple btn-secondary btn-lg",
+                            "link": "testimonial.html"
+                        }
+                    },
+                    {
+                        "pagination": [
+                            "owl-page", "owl-page active", "owl-page"
+                        ],
+                        "name": "Sophie",
+                        "job": "Web Developer",
+                        "star_amount": "3",
+                        "quote": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+                        "bottom_btn": {
+                            "text": "View All Testimonials",
+                            "class": "btn ripple btn-secondary btn-lg",
+                            "link": "testimonial.html"
+                        }
+                    },
+                    {
+                        "pagination": [
+                            "owl-page", "owl-page", "owl-page active"
+                        ],
+                        "name": "Williamson",
+                        "job": "Web Developer",
+                        "star_amount": "5",
+                        "quote": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+                        "bottom_btn": {
+                            "text": "View All Testimonials",
+                            "class": "btn ripple btn-secondary btn-lg",
+                            "link": "testimonial.html"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "file": "dt1_template/owl_carousel2.html",
+            "content": {
+                "title": "Latest News",
+                "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "cards": [
+                    {
+                        "cover_image": "dt1_template/assets/images/media/0-1.jpg",
+                        "link": "blog-details.html",
+                        "left_icon": {
+                            "icon": "fa fa-calendar-o",
+                            "text": "Dec-03-2020"
+                        },
+                        "right_icon": {
+                            "icon": "fa fa-comment",
+                            "text": "4 Comments"
+                        },
+                        "title": "Nemo enim ipsam voluptatem",
+                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/male/5.jpg",
+                            "name": "Joanne Nash",
+                            "link": "profile.html",
+                            "date": "1 day ago"
+                        },
+                        "reactions": [
+                            {
+                                "icon_class": "fe fe-heart mr-1",
+                                "href": "javascript:void(0)"
+                            },
+                            {
+                                "icon_class": "fa fa-thumbs-o-up",
+                                "href": "javascript:void(0)"
+                            }
+                        ]
+                    },
+                    {
+                        "cover_image": "dt1_template/assets/images/media/0-1.jpg",
+                        "link": "blog-details.html",
+                        "left_icon": {
+                            "icon": "fa fa-calendar-o",
+                            "text": "Nov-1-2019"
+                        },
+                        "right_icon": {
+                            "icon": "fa fa-comment",
+                            "text": "4 Comments"
+                        },
+                        "title": "Enim ad minim",
+                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/male/5.jpg",
+                            "name": "William Tell",
+                            "link": "profile.html",
+                            "date": "1 day ago"
+                        },
+                        "reactions": [
+                            {
+                                "icon_class": "fe fe-heart mr-1",
+                                "href": "javascript:void(0)"
+                            },
+                            {
+                                "icon_class": "fa fa-thumbs-o-up",
+                                "href": "javascript:void(0)"
+                            }
+                        ]
+                    },
+                    {
+                        "cover_image": "dt1_template/assets/images/media/0-1.jpg",
+                        "link": "blog-details.html",
+                        "left_icon": {
+                            "icon": "fa fa-calendar-o",
+                            "text": "Dec-03-2020"
+                        },
+                        "right_icon": {
+                            "icon": "fa fa-comment",
+                            "text": "4 Comments"
+                        },
+                        "title": "Enim ipsam",
+                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/male/5.jpg",
+                            "name": "John Doe",
+                            "link": "profile.html",
+                            "date": "1 day ago"
+                        },
+                        "reactions": [
+                            {
+                                "icon_class": "fe fe-heart mr-1",
+                                "href": "javascript:void(0)"
+                            },
+                            {
+                                "icon_class": "fa fa-thumbs-o-up",
+                                "href": "javascript:void(0)"
+                            }
+                        ]
+                    },
+                    {
+                        "cover_image": "dt1_template/assets/images/media/0-1.jpg",
+                        "link": "blog-details.html",
+                        "left_icon": {
+                            "icon": "fa fa-calendar-o",
+                            "text": "Dec-03-2020"
+                        },
+                        "right_icon": {
+                            "icon": "fa fa-comment",
+                            "text": "4 Comments"
+                        },
+                        "title": "Nemo",
+                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/male/5.jpg",
+                            "name": "Michael Nash",
+                            "link": "profile.html",
+                            "date": "1 day ago"
+                        },
+                        "reactions": [
+                            {
+                                "icon_class": "fe fe-heart mr-1",
+                                "href": "javascript:void(0)"
+                            },
+                            {
+                                "icon_class": "fa fa-thumbs-o-up",
+                                "href": "javascript:void(0)"
+                            }
+                        ]
+                    },
+                    {
+                        "cover_image": "dt1_template/assets/images/media/0-1.jpg",
+                        "link": "blog-details.html",
+                        "left_icon": {
+                            "icon": "fa fa-calendar-o",
+                            "text": "Aug-03-2010"
+                        },
+                        "right_icon": {
+                            "icon": "fa fa-comment",
+                            "text": "2 Comments"
+                        },
+                        "title": "Voluptatem",
+                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat",
+                        "author": {
+                            "avatar": "dt1_template/assets/images/users/male/5.jpg",
+                            "name": "Maie Dent",
+                            "link": "profile.html",
+                            "date": "1 day ago"
+                        },
+                        "reactions": [
+                            {
+                                "icon_class": "fe fe-heart mr-1",
+                                "href": "javascript:void(0)"
+                            },
+                            {
+                                "icon_class": "fa fa-thumbs-o-up",
+                                "href": "javascript:void(0)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }]}
