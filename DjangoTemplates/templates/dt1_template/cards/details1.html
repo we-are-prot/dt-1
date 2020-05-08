@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="tab-content details-tab-content">
-        {% for tab in tabs %}
+        {% for tab in card.tabs %}
             <div class="tab-pane {% if tab.class %}{{ tab.class }}{% endif %}" id="{{ tab.id }}">
             {% if tab.type == "description" %}
                 <div class="border-left border-right p-5 bg-white">
