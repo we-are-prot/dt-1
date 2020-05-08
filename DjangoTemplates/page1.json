@@ -201,7 +201,7 @@
             "content": {
                 "main_cards": [
                     {
-                        "card_file": "showcase1.html",
+                        "card_file": "dt1_template/cards/showcase1.html",
                         "title": "Bioplex - Beauty & Spa Creative Wordpress Template",
                         "tag_icons": [
                             {
@@ -246,7 +246,7 @@
                         ]
                     },
                     {
-                        "card_file": "details1.html",
+                        "card_file": "dt1_template/cards/details1.html",
                         "tabs": [
                             {
                                 "id": "tab-1",
