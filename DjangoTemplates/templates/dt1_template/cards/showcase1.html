@@ -22,7 +22,7 @@
             </a>
             <div class="p-4 border btn-list">
                 {% for button in card.buttons %}
-                    <a class="{{ button.class }}" href="{{ button.link }}"><i class="{{ button.icon }}"></i> {{ button.name }}</a>
+                    <a class="{{ button.class }}" href="{{ button.link }}"><i class="{{ button.icon }}"></i> {{ button.text }}</a>
                 {% endfor %}
             </div>
         </div>
