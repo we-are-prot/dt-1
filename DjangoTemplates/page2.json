@@ -1,13 +1,13 @@
 {
-            
-             "meta": {
+    "meta": {
         "description": "Templist – HTML5 Premium Digital goods marketplace directory jquery css responsive website Template",
         "header_title": "Page 2  | Templist – HTML5 Premium Digital goods marketplace directory jquery css responsive website Template",
         "header_icon": "dt1_template/assets/images/brand/favicon.ico",
         "author": "Spruko Technologies Private Limited",
         "keywords": "digital goods, digital marketplace, easy digital downloads, marketplace website, multi vendor, online marketplace, digital download, marketplace, best marketplace, best marketplace websites, building an online marketplace, digital goods marketplace, digital product marketplace, internet marketplace, marketplace html template, marketplace template, marketplace website template, online marketplace to sell, web marketplace, bootstrap 4 marketplace template, bootstrap marketplace, bootstrap marketplace template, digital marketplace html template, html marketplace template, marketplace bootstrap template, marketplace template bootstrap, marketplace template html, multi vendor html template, template marketplace bootstrap"
     },
-"sections": [{
+    "sections": [
+        {
             "file": "dt1_template/list_panel1.html",
             "content": {
                 "title": "Featured Templates",
@@ -542,7 +542,7 @@
             }
         },
         {
-            "file": "dt1_template/row_deck2.html",
+            "file": "dt1_template/sections/row_deck2.html",
             "content": {
                 "class": "about-1 cover-image sptb section-bg-background-color1",
                 "tiles": [
@@ -570,7 +570,7 @@
             }
         },
         {
-            "file": "dt1_template/widget1.html",
+            "file": "dt1_template/sections/widget1.html",
             "content": {
                 "widgets": [
                     {
@@ -597,7 +597,7 @@
             }
         },
         {
-            "file": "dt1_template/testimonials1.html",
+            "file": "dt1_template/sections/testimonials1.html",
             "content": {
                 "title": "Best Testimonials",
                 "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -660,7 +660,7 @@
             }
         },
         {
-            "file": "dt1_template/owl_carousel2.html",
+            "file": "dt1_template/sections/owl_carousel2.html",
             "content": {
                 "title": "Latest News",
                 "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -817,4 +817,6 @@
                     }
                 ]
             }
-        }]}
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+<div class="card overflow-hidden">
+    <div class="card-body">
+        <div class="item-det mb-4">
+            <a class="text-dark" href="#"><h2 class="fs-22">{{ card.title }}</h2></a>
+            <div class="d-flex mt-2">
+                <ul class="d-flex">
+                    {% for icon in card.tag_icons %}
+                        <li class="mr-5">
+                            <a class="icons" href="{{ icon.link }}"><i class="{{ icon.icon }}"></i> {{ icon.text }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="marketplace-single-imag mx-auto text-center">
+            <a class="d-block link-overlay" href="{{ card.image.link }}">
+                <img alt="" class="d-block img-fluid mx-auto text-center w-100" src="{% static card.image.img %}" />
+                <span class="link-overlay-bg rounded">
+                    <i class="fe fe-search fs-25"></i>
+                </span>
+            </a>
+            <div class="p-4 border btn-list">
+                {% for button in card.buttons %}
+                    <a class="{{ button.class }}" href="{{ button.link }}"><i class="{{ button.icon }}"></i> {{ button.icon }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
