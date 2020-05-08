@@ -221,7 +221,7 @@
             {% elif tab.type == "contact" %}
                 <div class="border-left border-right p-5 bg-white">
                     <h3 class="card-title mb-4">{{ tab.content.title }}</h3>
-                    {% for field in fields %}
+                    {% for field in tab.content.fields %}
                         {% if field.type == "input" %}
                             <div class="form-group">
                                 <label class="form-label">{{ field.title }}</label>
