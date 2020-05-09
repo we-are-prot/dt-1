@@ -2,23 +2,7 @@
 <link href="{% static 'dt1_template/assets/plugins/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
 
 <div class="card mt-5 mt-lg-0">
-    <div class="licence-niceselect pt-4 pl-4 pr-4 pb-0">
-        <div class="licence-niceselect">
-            <select class="nice-select required" id="licence-categories" name="custom1">
-                {% for option in card.options %}
-                    <option value="{{ option.value }}">{{ option.name }}</option>
-                {% endfor %}
-            </select>
-        </div>
-    </div>
-    <div class="nice-select required" tabindex="0">
-        <span class="current">Select License</span>
-        <ul class="list">
-            {% for option in card.options %}
-                <li data-value="{{ option.value }}" class="option">{{ option.name }}</li>
-            {% endfor %}
-        </ul>
-    </div> 
+
 
 
 
