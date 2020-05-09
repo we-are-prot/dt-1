@@ -2,7 +2,7 @@
 <h3 class="mb-5 mt-6">{{ card.title }}</h3>
 <!--Related Posts-->
 <div class="owl-carousel owl-carousel-icons3" id="myCarousel1">
-    {% for item in card.content.carousel %}
+    {% for item in card.carousel %}
         <div class="item">
             <div class="card mb-0">
                 {% if item.ribbon_icon %}
