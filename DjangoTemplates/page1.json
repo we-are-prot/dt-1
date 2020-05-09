@@ -649,6 +649,57 @@
                             }
                         ]
                     }
+                ],
+                "rightside_cards": [
+                    {
+                        "card_file": "dt1_template/cards/rightside_payoptions1.html",
+                        "options": [
+                            {
+                                "name": "Regular License",
+                                "value": "regular",
+                                "price": "$30",
+                                "active": "true",
+                                "features": [
+                                    "6 Months Support & Updates",
+                                    "Forum Support",
+                                    "Best Quality Products",
+                                    "One domain"
+                                ]
+                            },
+                            {
+                                "name": "Extended License",
+                                "value": "extend",
+                                "price": "$50",
+                                "features": [
+                                    "1 year Support & Updates",
+                                    "Forum Support",
+                                    "Best Quality Products",
+                                    "Unlimited domains"
+                                ]
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "class": "btn ripple btn-primary btn-block btn-lg",
+                                "link": "#",
+                                "icon": "fe fe-shopping-cart",
+                                "text": "Add to Cart"
+                            },
+                            {
+                                "class": "btn ripple btn-info btn-block btn-lg",
+                                "link": "#",
+                                "text": "Buy Now"
+                            }
+                        ],
+                        "payment_option_icons": [
+                            "payment payment-maestro",
+                            "payment payment-paypal",
+                            "payment payment-visa",
+                            "payment payment-mastercard",
+                            "payment payment-cirrus",
+                            "payment payment-discover"
+                        ]
+                    }
                 ]
             }
         }        

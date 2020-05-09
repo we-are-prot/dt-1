@@ -1,0 +1,32 @@
+<div class="card mt-5 mt-lg-0">
+    <div class="licence-niceselect pt-4 pl-4 pr-4 pb-0">
+        <div class="licence-niceselect">
+            <select class="nice-select required" id="licence-categories" name="custom1">
+                {% for option in card.options %}
+                <option value="{{ option.value }}">{{ option.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="pt-4 pb-4 pl-5 pr-5 border-bottom">
+        {% for option in card.options %}
+            <div class="licence-content {% if option.active %}active{% endif %}" id="{{ option.value }}">
+                <span class="mb-0 ml-auto licence-price">{{ option.price }}</span>
+                <ul class="list-unstyled widget-spec mb-0">
+                    {% for feature in option.features %}
+                    <li><i aria-hidden="true" class="fe fe-check"></i> {{ option.feature }}</li>
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="card-body item-user">
+        {% for button in card.buttons %}
+            <a class="{{ button.class }}" href="{{ button.link }}">{% if button.icon %}<i class="{{ button.icon }}"></i>{% endif %}Add to Cart</a>
+        {% endfor %}
+    </div>
+    <div class="p-3 border-top text-center bg-light">
+        {% for icon in card.payment_option_icons %}
+            <i class="{{ icon }} mr-2"></i>
+        {% endfor %}
+    </div>
+</div>
