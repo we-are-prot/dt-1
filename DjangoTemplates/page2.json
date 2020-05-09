@@ -8,7 +8,7 @@
     },
     "sections": [
         {
-            "file": "dt1_template/list_panel1.html",
+            "file": "dt1_template/sections/list_panel1.html",
             "content": {
                 "title": "Featured Templates",
                 "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
