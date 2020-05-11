@@ -699,6 +699,15 @@
                             "payment payment-cirrus",
                             "payment payment-discover"
                         ]
+                    },
+                    {
+                        "card_file": "dt1_template/cards/featured1.html",
+                        "ribbon": {
+                            "class": "power-ribbon power-ribbon-top-left text-warning",
+                            "icon_class": "bg-warning",
+                            "icon": "fa fa-bolt"
+                        },
+                        "tagline": "This Item was Featured On Website"
                     }
                 ]
             }
