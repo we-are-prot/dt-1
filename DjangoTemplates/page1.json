@@ -710,10 +710,16 @@
                         "tagline": "This Item was Featured On Website"
                     },
                     {
-                        "card_file": "number_feature1.html",
+                        "card_file": "dt1_template/cards/number_feature1.html",
                         "text": "Total Sales:",
                         "icon": "typcn typcn-shopping-cart text-dark mr-1",
                         "number": "572"
+                    },
+                    {
+                        "card_file": "dt1_template/cards/number_feature1.html",
+                        "text": "Total Comments:",
+                        "icon": "typcn typcn-messages text-dark mr-1",
+                        "number": "12"
                     }
                 ]
             }
