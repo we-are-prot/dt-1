@@ -790,11 +790,6 @@
                                 "class": "btn ripple btn-light btn-block btn-lg",
                                 "link": "profile.html",
                                 "text": "View Profile"
-                            },
-                            {
-                                "class": "btn ripple btn-light btn-block btn-lg",
-                                "link": "profile.html",
-                                "text": "View Profile"
                             }
                         ]
                     }
