@@ -1,0 +1,14 @@
+<div class="card mb-0">
+    <div class="card-header">
+        <h3 class="card-title">{{ card.title }}</h3>
+    </div>
+    <div class="card-body">
+        <div class="marketplace-content">
+            <ul class="list-unstyled widget-spec mb-0">
+                {% for info in card.information %}
+                    <li class=""><span class="w-40 font-weight-semibold text-dark">{{ info.name }}</span><span class="w-60 text-muted">{{ info.text }}</span></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

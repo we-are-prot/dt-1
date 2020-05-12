@@ -792,6 +792,40 @@
                                 "text": "View Profile"
                             }
                         ]
+                    },
+                    {
+                        "card_file": "dt1_template/cards/info1.html",
+                        "title": "Product Information",
+                        "information": [
+                            {
+                                "name": "Last Update",
+                                "text": "18 January 2018"
+                            },
+                            {
+                                "name": "Release Date",
+                                "text": "10 August 2015"
+                            },
+                            {
+                                "name": "High Resolotuion",
+                                "text": "Yes"
+                            },
+                            {
+                                "name": "Cateogry",
+                                "text": "Corporate Classifieds"
+                            },
+                            {
+                                "name": "Documentation",
+                                "text": "Well Documented"
+                            },
+                            {
+                                "name": "Files Included",
+                                "text": "CSS, HTML, JS"
+                            },
+                            {
+                                "name": "Last Update",
+                                "text": "18 January 2018"
+                            }
+                        ]
                     }
                 ]
             }
