@@ -652,7 +652,7 @@
                 ],
                 "rightside_cards": [
                     {
-                        "card_file": "dt1_template/cards/rightside_payoptions1.html",
+                        "card_file": "dt1_template/cards/payoptions1.html",
                         "options": [
                             {
                                 "name": "Regular License",
