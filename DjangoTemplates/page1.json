@@ -731,7 +731,7 @@
                             "fa fa-star text-warning",
                             "fa fa-star-o text-warning mr-2"
                         ],
-                        "rating_amount": "500",
+                        "rating_amount": "462",
                         "rating_list": [
                             {
                                 "name": "5 Star",
@@ -752,6 +752,44 @@
                             {
                                 "name": "1 Star",
                                 "percentage": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "card_file": "dt1_template/cards/profile1.html",
+                        "info": {
+                            "name": "Vania Laurin",
+                            "link": "userprofile.html",
+                            "img": "dt1_template/assets/images/users/female/3.jpg",
+                            "tagline": "Member since 8 November 2010"
+                        },
+                        "socials": [
+                            {
+                                "icon": "fa fa-facebook",
+                                "link_class": "facebook-bg mt-0",
+                                "link": "#" 
+                            },
+                            {
+                                "icon": "fa fa-twitter",
+                                "link_class": "twitter-bg",
+                                "link": "#" 
+                            },
+                            {
+                                "icon": "fa fa-pinterest",
+                                "link_class": "pinterest-bg",
+                                "link": "#" 
+                            },
+                            {
+                                "icon": "fa fa-share text-white",
+                                "link_class": "bg-info",
+                                "link": "#" 
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "class": "btn ripple btn-light btn-block btn-lg",
+                                "link": "profile.html",
+                                "text": "View Profile"
                             }
                         ]
                     }
