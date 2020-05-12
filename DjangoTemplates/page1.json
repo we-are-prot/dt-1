@@ -720,18 +720,6 @@
                         "text": "Total Comments:",
                         "icon": "typcn typcn-messages text-dark mr-1",
                         "number": "12"
-                    },
-                    {
-                        "card_file": "dt1_template/cards/ratings1.html",
-                        "title": "Item Ratings:",
-                        "rating_icons": [
-                            "fa fa-star text-warning",
-                            "fa fa-star text-warning",
-                            "fa fa-star text-warning",
-                            "fa fa-star text-warning",
-                            "fa fa-star-o text-warning mr-2"
-                        ],
-                        "rating_amount": "500"
                     }
                 ]
             }
