@@ -1,17 +1,21 @@
-    <div class="licence-niceselect pt-4 pl-4 pr-4 pb-0">
-        <div class="licence-niceselect">
-            <select class="nice-select required" id="licence-categories" name="custom1">
-                {% for option in card.options %}
-                    <option value="{{ option.value }}">{{ option.name }}</option>
+<div class="card">
+    <div class="card-body">
+        <div class="item-rating-info d-flex mb-4">
+            <h5 class="mr-3">{{ card.title }}</h5>
+            <span class="item-ratings fs-14">
+                {% for icon in card.rating_icons %}
+                    <i class="{{ icon }}"></i>
                 {% endfor %}
-            </select>
+                ({{ card.rating_amount }})
+            </span>
         </div>
+        {% for rating in card.rating_list %}
+            <div class="mb-3">
+                <small class="mb-0">{{ rating.name }}<span class="float-right text-muted">{{ rating.percentage }}%</span></small>
+                <div class="progress h-1 mt-1">
+                    <div class="progress-bar bg-warning w-{{ rating.percentage }}" role="progressbar"></div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
-    <div class="nice-select required" tabindex="0">
-        <span class="current">Select License</span>
-        <ul class="list">
-            {% for option in card.options %}
-                <li data-value="{{ option.value }}" class="option">{{ option.name }}</li>
-            {% endfor %}
-        </ul>
-    </div> 
+</div> 

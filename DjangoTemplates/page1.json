@@ -720,6 +720,40 @@
                         "text": "Total Comments:",
                         "icon": "typcn typcn-messages text-dark mr-1",
                         "number": "12"
+                    },
+                    {
+                        "card_file": "dt1_template/cards/ratings1.html",
+                        "title": "Item Ratings:",
+                        "rating_icons": [
+                            "fa fa-star text-warning",
+                            "fa fa-star text-warning",
+                            "fa fa-star text-warning",
+                            "fa fa-star text-warning",
+                            "fa fa-star-o text-warning mr-2"
+                        ],
+                        "rating_amount": "500",
+                        "rating_list": [
+                            {
+                                "name": "5 Star",
+                                "percentage": "50"
+                            },
+                            {
+                                "name": "4 Star",
+                                "percentage": "30"
+                            },
+                            {
+                                "name": "3 Star",
+                                "percentage": "15"
+                            },
+                            {
+                                "name": "2 Star",
+                                "percentage": "5"
+                            },
+                            {
+                                "name": "1 Star",
+                                "percentage": "0"
+                            }
+                        ]
                     }
                 ]
             }
