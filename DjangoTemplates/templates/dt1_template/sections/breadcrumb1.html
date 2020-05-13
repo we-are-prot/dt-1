@@ -4,7 +4,7 @@
             <h4 class="page-title">{{ section.content.title }}</h4>
             <ol class="breadcrumb">
                 {% for crumb in section.content.breadcrumb_items %}
-                    <li class="breadcrumb-item {% if crumb.active %}active{% endif %}"><a href="{{ crumb.link }}">{{ crumb.name }}</a></li>
+                    <li class="breadcrumb-item {% if crumb.active %}active{% endif %}">{% if crumb.link %}<a href="{{ crumb.link }}">{% endif %}{{ crumb.name }}{% if crumb.link %}</a>{% endif %}</li>
                 {% endfor %}
             </ol>
         </div>
