@@ -20,6 +20,27 @@
             }
         },
         {
+            "file": "dt1_template/sections/breadcrumb1.html",
+            "content": {
+                "title": "Details",
+                "breadcrumb_items": [
+                    {
+                        "name": "Home",
+                        "link": "#"
+                    },
+                    {
+                        "name": "Pages",
+                        "link": "#"
+                    },
+                    {
+                        "name": "Details",
+                        "link": "#",
+                        "active": true
+                    }
+                ]
+            }
+        },
+        {
             "file": "dt1_template/sections/card_bay.html",
             "content": {
                 "main_cards": [
