@@ -508,7 +508,7 @@
 
     "sections": [
         {
-            "file": "dt1_template/pricing_masthead.html",
+            "file": "dt1_template/sections/pricing_masthead.html",
             "content": {
                 "background_img": "dt1_template/assets/images/banners/banner1.jpg",
                 "title": "Pricing",
@@ -529,7 +529,7 @@
             }
         },
         {
-            "file": "dt1_template/pricing_table1.html",
+            "file": "dt1_template/sections/pricing_table1.html",
             "content": {
                 "columns": [
                     {
@@ -629,7 +629,7 @@
             }
         },
         {
-            "file": "dt1_template/pricing_table2.html",
+            "file": "dt1_template/sections/pricing_table2.html",
             "content": {
                 "title": "Another Pricing",
                 "tagline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -767,7 +767,7 @@
             }
         },
         {
-            "file": "dt1_template/subscribe1.html",
+            "file": "dt1_template/sections/subscribe1.html",
             "content": {
                 "title": "Subscribe To Our Online newsletter",
                 "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",

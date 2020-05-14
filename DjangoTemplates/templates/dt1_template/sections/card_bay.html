@@ -1,0 +1,24 @@
+<!--Section-->
+<section class="sptb">
+    <div class="container">
+        <div class="row">
+            {% if section.content.main_cards %}
+            <div class="col-xl-8 col-lg-8 col-md-12">
+                {% for card in section.content.main_cards %}
+                    {% include card.card_file %}
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if section.content.rightside_cards %}
+            <!--Right Side Content-->
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                {% for card in section.content.rightside_cards %}
+                    {% include card.card_file %}
+                {% endfor %}
+            </div>
+            <!--Rightside Content-->
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!--/Section-->

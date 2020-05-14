@@ -1,0 +1,250 @@
+{% load static %}
+<div class="border-0 mb-5">
+    <div class="wideget-user-tab wideget-user-tab3">
+        <div class="tab-menu-heading">
+            <div class="tabs-menu1">
+                <ul class="nav">
+                    {% for tab in card.tabs %}
+                        <li class=""><a {% if tab.class %}class="{{ tab.class }}"{% endif %} data-toggle="tab" href="#{{ tab.id }}">{{ tab.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content details-tab-content">
+        {% for tab in card.tabs %}
+            <div class="tab-pane {% if tab.class %}{{ tab.class }}{% endif %}" id="{{ tab.id }}">
+            {% if tab.type == "description" %}
+                <div class="border-left border-right p-5 bg-white">
+                    <h3 class="card-title mb-3">{{ tab.content.title }}</h3>
+                    <div class="mb-0">
+                        {% for para in tab.content.paragraphs %}
+                            <p>
+                                {{ para }}
+                            </p>
+                        {% endfor %}
+                    </div>
+                    {% if tab.content.features %}
+                        <h4 class="card-title mb-3">{{ tab.content.features.title }}</h4>
+                        <div class="row">
+                            {% for column in tab.content.features.columns %}
+                                <div class="col-xl-6 col-md-6">
+                                    <ul class="list-unstyled widget-spec mb-0">
+                                        {% for feature in column %}
+                                            <li class=""><i class="typcn typcn-chevron-right-outline text-muted"></i> {{ feature }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% if tab.content.tags %}
+                    <div class="row mt-6 mb-1">
+                        {% for tag in tab.content.tags %}
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card text-center bg-light shadow-none mb-3">
+                                    <div class="card-body pt-3 pb-3">
+                                        <p class="">{{ tag }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="card-footer bg-white br-bl-3 br-br-3 border-right border-left border-bottom">
+                    <div class="btn-list">
+                        {% for button in tab.content.buttons %}
+                            <a class="{{ button.class }}" href="{{ button.link }}"><i class="{{ button.icon }} mr-1"></i> {{ button.text }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% elif tab.type == "reviews" %}
+                <div class="border-left border-right p-5 bg-white border-bottom br-bl-3 br-br-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            {% for review in tab.content.reviews %}
+                                <div class="card shadow-none">
+                                    <div class="card-header bg-light shadow-none">
+                                        <div class="rating-stars d-flex">
+                                            <input class="rating-value star" name="rating-stars-value" readonly="readonly" type="number" value="{{ review.star_amount }}" />
+                                            <div class="rating-stars-container mr-2">
+                                                <div class="rating-star lg">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="rating-star lg">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="rating-star lg">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="rating-star lg">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="rating-star lg">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-options">
+                                            <span class="">by<a class="text-primary" href="{{ review.reviewer_link }}">{{ review.reviewer }}</a> 
+                                                <span class="text-muted">{{ review.date }}</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="dark-grey-text mb-2">{{ review.title }}</h4>
+                                        <p class="font-weight-normal dark-grey-text mb-0">
+                                            {{ review.text }}
+                                        </p>
+                                    </div>
+                                    {% for comment in review.comments %}
+                                        <div class="card-body bg-light">
+                                            <div class="media mt-0 mb-0">
+                                                <div class="d-flex mr-3">
+                                                    <a href="#"><img alt="64x64" class="media-object brround" src="{% static comment.author_img %}" /> </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="mt-0 mb-1">{{ comment.author }}</h4>
+                                                    <p class="fs-15 mb-0 mt-2">
+                                                        {{ comment.text }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                            <ul class="pagination">
+                                <li class="page-item page-prev disabled">
+                                    <a class="page-link" href="{{ tab.content.pagination.prev_link }}" tabindex="-1">Prev</a>
+                                </li>
+                                {% for page in tab.content.pagination.pages %}
+                                    <li class="page-item {% if page.active %}active{% endif %}"><a class="page-link" href="{{ page.link }}">{{ page.num }}</a></li>
+                                {% endfor %}
+                                <li class="page-item page-next">
+                                    <a class="page-link" href="{{ tab.content.pagination.next_link }}">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% if tab.content.write_review %}
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            <h3 class="card-title">{{ tab.content.write_review.title }}</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating-stars d-flex mb-3">
+                                <label class="form-label mr-3 mt-1">{{ tab.content.write_review.rating_text }}</label>
+                                <input class="rating-value star" name="rating-stars-value" readonly="readonly" type="number" value="3" />
+                                <div class="rating-stars-container mr-2">
+                                    <div class="rating-star lg">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="rating-star lg">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="rating-star lg">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="rating-star lg">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="rating-star lg">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            {% if options %}
+                                <div class="form-group reviewselect">
+                                    <select class="form-control select2 custom-select">
+                                        {% for option in tab.content.write_review.options %}
+                                            <option value="{{ forloop.counter0 }}">{{ option }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            {% endif %}
+                            <div class="form-group">
+                                <textarea class="form-control" name="example-textarea-input" placeholder="{{ tab.content.write_review.placeholder }}" rows="6"></textarea>
+                            </div>
+                            <a class="{{ tab.content.write_review.btn.class }}" href="{{ tab.content.write_review.btn.link }}">{{ tab.content.write_review.btn.text }}</a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% elif tab.type == "comments" %}
+                <div class="border-left border-right p-5 bg-white border-bottom br-bl-3 br-br-3">
+                    {% for comment in tab.content.comments %}
+                        <div class="card shadow-none">
+                            <div class="card-body">
+                                <div>
+                                    <div class="media mt-0">
+                                        <img alt="Image description" class="mr-3 bg-light" src="{% static comment.img %}" />
+                                        <div class="media-body">
+                                            <div class="d-md-flex align-items-center">
+                                                <h4 class="mb-2">
+                                                    {{ comment.title }}
+                                                </h4>
+                                                <small class="text-muted ml-md-auto"><i class="fe fe-calendar mr-1"></i> {{ comment.date }}</small>
+                                            </div>
+                                            {% for action in tab.content.comment_actions %}
+                                                <a class="mr-2" {% if action.data_target %} data-target="{{ action.data_target }}" data-toggle="modal" {% endif %} href="{{ action.link }}"><span class="{{ action.class }}">{{ action.text }}</span></a>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <p class="fs-15 mb-0 mt-3">
+                                        {{ comment.text }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% if tab.content.write_comment %}
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            <h3 class="card-title">{{ tab.content.write_comment.title }}</h3>
+                        </div>
+                        <div class="card-body">
+                            {% for field in tab.content.write_comment.fields %}
+                                <div class="form-group">
+                                    {% if field.type == "input" %}
+                                        <input class="form-control" id="{{ field.id }}" placeholder="{{ field.placeholder }}" type="text" />
+                                    {% elif field.type == "textarea" %}
+                                        <textarea class="form-control" id="textarea" placeholder="{{ field.placeholder }}" rows="6"></textarea>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                            <a class="{{ tab.content.write_comment.submit.class }}" href="{{ tab.content.write_comment.submit.link }}">{{ tab.content.write_comment.submit.text }}</a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% elif tab.type == "contact" %}
+                <div class="border-left border-right p-5 bg-white">
+                    <h3 class="card-title mb-4">{{ tab.content.title }}</h3>
+                    {% for field in tab.content.fields %}
+                        {% if field.type == "input" %}
+                            <div class="form-group">
+                                <label class="form-label">{{ field.title }}</label>
+                                <input class="form-control" placeholder="{{ field.placeholder }}" type="text" id="field.id" />
+                            </div>
+                        {% elif field.type == "textarea" %}
+                            <div class="form-group">
+                                <label class="form-label">{{ field.title }}</label>
+                                <textarea class="form-control" id="{{ field.id }}" placeholder="{{ field.placeholder }}" rows="6"></textarea>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <a class="{{ tab.content.submit.class }}" href="{{ tab.content.submit.link }}">{{ tab.content.submit.text }}</a>
+                </div>
+                <div class="card-footer bg-white br-bl-3 br-br-3 border-right border-left border-bottom">
+                    <div class="btn-list">
+                        {% for button in tab.content.buttons %}
+                            <a class="{{ button.class }}" href="{{ button.link }}"><i class="{{ button.icon }} mr-1"></i> {{ button.text }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

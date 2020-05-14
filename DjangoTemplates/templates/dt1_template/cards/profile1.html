@@ -1,0 +1,20 @@
+{% load static %}
+<div class="card">
+    <div class="card-body item-user">
+        <div class="text-center">
+            <a class="mb-4" href="{{ card.info.link }}"><img alt="imag" class="avatar avatar-xxl brround" src="{% static card.info.img %}" /></a>
+            <a href="{{ card.info.link }}"><h3 class="mt-2 mb-1 text-dark">{{ card.info.name }}</h3></a>
+            <span class="text-muted">{{ card.info.tagline }}</span>
+        </div>
+        <div class="item-user-icons mt-2 mb-5 text-center">
+            {% for icon in card.socials %}
+                <a class="{{ icon.link_class }}" href="{{ icon.link }}"><i class="{{ icon.icon }}" style="top:30%;position:relative;"></i></a>
+            {% endfor %}
+        </div>
+        <div class="">
+            {% for button in card.buttons %}
+                <a class="{{ button.class }}" href="{{ button.link }}">{{ button.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

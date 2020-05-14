@@ -1,0 +1,48 @@
+{% load static %}
+
+{% comment %}
+
+{
+    "sections": [
+        {
+            "file": "dt1_template/sections/masthead2.html",
+            "content": {
+                "background_img": "dt1_template/assets/images/banners/banner4.jpg",
+                "text": "9,120 Wordpress Themes Available Now!",
+                "searchbar": {
+                    "placeholder": "Search Product...",
+                    "button_class": "btn ripple",
+                    "button_icon": "fe fe-search"
+                }
+            }
+        }
+    ]
+}
+
+{% endcomment %}
+
+<div class="cover-image bg-background" data-image-src="{% static section.content.background_img %}">
+    <div>
+        <div class="sptb-5">
+            <div class="header-text1 mb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-12 col-md-12 d-block mx-auto">
+                            <div class="text-center text-white text-property mb-4">
+                                <h1 class="">{{ section.content.text }}</h1>
+                                <div class="row">
+                                    <div class="col-xl-10 col-lg-12 col-md-12 d-block mx-auto">
+                                        <div class="search-form">
+                                            <input type="text" class="form-control input-lg" id="text4" placeholder="{{ section.content.searchbar.placeholder }}">
+                                            <button class="{{ section.content.searchbar.button_class }}"><i class="{{ section.content.searchbar.button_icon }}"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
